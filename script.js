@@ -2,8 +2,8 @@ let api = "https://crudcrud.com/api/adc54d7744e946cd8ffc1851accabb6d/grupo275";
 let contenedor = document.getElementById("contenedor");
 
 //function mostrarRegistro(data, index) {
-//  contenedor.innerHTML = JSON.stringify(data[index]);
-//}
+    //  contenedor.innerHTML = JSON.stringify(data[index]);
+    //}
 function mostrarRegistro() {
     contenedor.innerHTML = "";
     fetch(api)
@@ -13,8 +13,7 @@ function mostrarRegistro() {
       .then((data) => {
         console.log(data);
         for (const i of data) {
-          contenedor.innerHTML += `
-            <h4>ID generado: ${i._id}</h4>
+          contenedor.innerHTML += `<h5>ID generado: ${i._id}</h5>
             <p>Nombre: ${i.nombre} ${i.apellido}</p>
             <p>Grupo: ${i.grupo}</p>
             <p>Sala: ${i.sala}</p>`;
