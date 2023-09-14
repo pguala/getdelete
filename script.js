@@ -22,12 +22,14 @@ function crearElementos(data) {
   for (let i of data) {
     contenedor.innerHTML +=
       `<b>ID: ${i._id} </b><button type="submit" onclick="eliminarRegistro('${i._id}')"><img src="trash.gif"/></button>
+      <button type="submit" onclick="editarRegistro('${i._id}')"><img src="edit.gif"/></button>
        <p>Nombre: ${i.nombre} ${i.apellido}</p>
        <p>Grupo: ${i.grupo}</p>
        <p>Sala: ${i.sala}</p><hr>`;
   }
 }
 
+//DELETE
 function eliminarRegistro(id) {
   fetch(api + id, {
     method: "DELETE",
@@ -36,6 +38,12 @@ function eliminarRegistro(id) {
     },
   });
   alert("Borrado");
+}
+
+//PUT
+function editarRegistro(id) {
+  sessionStorage.setItem("id",id);
+  location.replace("editar.html");
 }
 
 //fetch(api)
