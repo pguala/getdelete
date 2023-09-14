@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+b, button {
+    display: inline-block;
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 2px;
+	cursor: pointer;
+}
+img {
+    width: 20px;
+}
