@@ -1,12 +1,6 @@
 let api = "https://crudcrud.com/api/adc54d7744e946cd8ffc1851accabb6d/grupo275";
 let contenedor = document.getElementById("contenedor");
 
-document.addEventListener('DOMContentLoaded', () => {
-    setInterval(mostrarRegistro, 1500);
-});
-
-
-
 //function mostrarRegistro(data, index) {
 //  contenedor.innerHTML = JSON.stringify(data[index]);
 //}
@@ -27,8 +21,6 @@ function mostrarRegistro() {
         }
       });
   }
-  
-  
 
 //function eliminarRegistro(i) {
 //  fetch(api + _id, {
@@ -45,3 +37,7 @@ function mostrarRegistro() {
 //    }
 //    setInterval(mostrarRegistro(apiEntero, indexRegistro), 1500);
 //  });
+
+document.addEventListener('DOMContentLoaded', () => {
+    setInterval(mostrarRegistro, 1500);
+});
