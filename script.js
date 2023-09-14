@@ -1,4 +1,4 @@
-let api = "https://crudcrud.com/api/adc54d7744e946cd8ffc1851accabb6d/teste/";
+let api = "https://crudcrud.com/api/adc54d7744e946cd8ffc1851accabb6d/grupo275/";
 let contenedor = document.getElementById("contenedor");
 
 document.addEventListener("DOMContentLoaded", () => {
