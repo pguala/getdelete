@@ -46,6 +46,11 @@ function editarRegistro(id) {
   location.replace("editar.html");
 }
 
+document.getElementById("enviar").addEventListener("click", function (){
+  location.replace("enviar.html");
+});
+
+
 //fetch(api)
 //  .then((response) => response.json())
 //  .then((apiEntero) => {

@@ -17,14 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
       sala: sala,
     });
     console.log(string);
-    //Obtener ID seleccionado
-    let id = sessionStorage.getItem("id");
-    //PUT
+    //POST
     fetch(api, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      method: "POST",
+      headers: { "Content-Type": "application/json; charset=utf-8" },
       body: string,
     });
     location.replace("index.html");
